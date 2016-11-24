@@ -24,12 +24,33 @@
       body {
         padding-top: 40px;
       }
+      .img-container {
+        display:table;
+        vertical-align:middle;
+        text-align:center;
+        width:100%; 
+      }
+      figure {
+        display: inline-block;
+        margin: 20px; /* adjust as needed */
+        text-align: center;
+      }
+      figure img {
+        vertical-align: top;
+        width:250px;
+      }
+      figure figcaption {
+        width: 250px;
+        text-align: left;
+        margin-left:25px;
+      }
     </style>
     <script>
       var shiftWindow = function() { scrollBy(0, -50) };
       window.addEventListener("hashchange", shiftWindow);
       function load() { if (window.location.hash) shiftWindow(); }
     </script>
+
 
   </head>
 
@@ -61,10 +82,20 @@
       <div class="starter-template">
 
         <br>
+        <br>
         <div id="misc">
           <ul>
+            <li> 
+            <a href="http://www.wfp.org/">United Nations World Food Programme</a>
+            <br>
+          </ul>
+          <div class="img-container">
+            <figure>
+              <img src='bob_marley.jpg' alt='quote'/>
+              <figcaption><q>Don't gain the world and lose your soul; wisdom is better than silver or gold.</q> ― Bob Marley</figcaption>
+            </figure>
+          </div>
         </div>
-
         <br><br><br>
 
 
